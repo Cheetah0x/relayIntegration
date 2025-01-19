@@ -16,7 +16,7 @@ export const getMayanQuote = async (
       {
         params: {
           solanaProgram: "FC4eXxkyrMPTjiYUpp4EAnkmwMbQyZ6NDCh1kfLn6vsf",
-          forwarderAddress: "0x0654874eb7F59C6f5b39931FC45dC45337c967c3",
+          forwarderAddress: "0x0654874eb7F59C6f5b39931FC45dC45337c967c3", // no idea what this is.
           amountIn,
           fromToken,
           fromChain,
@@ -35,4 +35,14 @@ export const getMayanQuote = async (
     console.error("Error fetching Mayan quote:", error);
     throw error;
   }
+};
+
+//will need to find a way to get the transaction hash, should be able to get this from the
+//transaction of the user to the escrow
+
+export const getTransactionStatus = async (transactionHash: string) => {
+  const response = await axios.get(
+    `https://explorer-api.mayan.finance/v3/swap/trx/${transactionHash}`
+  );
+  return response.data;
 };
