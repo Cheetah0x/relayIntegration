@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "test:integration": "jest --config jest.integration.config.js"
+    "test:integration": "jest --config jest.integration.config.js",
+    "test:mayan": "jest test/integration/mayanQuote.test.ts"
   },
   "dependencies": {
     "@types/qrcode": "^1.5.5",
