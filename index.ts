@@ -99,13 +99,13 @@ export const getTokenInfo = async (tokenAddress: string, chainId: number) => {
 };
 
 //GETS THE STATUS OF REQUEST
-export const getTransactionStatus = async (transactionId: string) => {
+export const getTransactionStatus = async (requestId: string) => {
   try {
     const response = await axios.get(
       `https://api.relay.link/intents/status/v2`,
       {
         params: {
-          intentId: transactionId,
+          requestId,
         },
       }
     );
