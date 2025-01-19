@@ -20,8 +20,7 @@ describe("Quote Integration Tests", () => {
       "1000000000", // 1000 USDC (6 decimals)
       "GfkTE5CKW5Xm3o7NWsFNNzgGqJQ8Nd64eFW8MAnotfUQ", // Solana recipient
       "0x2A3Ce312571612d2ca3A05F4AB5f6AbEde266271", // User's Ethereum address
-      appFees,
-      "EXACT_INPUT"
+      appFees
     );
 
     // Log detailed information about the quote
@@ -118,8 +117,7 @@ describe("Quote Integration Tests", () => {
       "1000000000", // 1000 USDC (6 decimals)
       "0x2A3Ce312571612d2ca3A05F4AB5f6AbEde266271", // User's Ethereum address
       "GfkTE5CKW5Xm3o7NWsFNNzgGqJQ8Nd64eFW8MAnotfUQ", // Solana recipient
-      appFees,
-      "EXACT_INPUT"
+      appFees
     );
 
     // Log detailed information about the quote
@@ -161,8 +159,7 @@ describe("Quote Integration Tests", () => {
       "1000000000", // 1000 USDC
       "GfkTE5CKW5Xm3o7NWsFNNzgGqJQ8Nd64eFW8MAnotfUQ", // Solana recipient
       "0x2A3Ce312571612d2ca3A05F4AB5f6AbEde266271", // User's Ethereum address
-      [], // No app fees for this test
-      "EXACT_INPUT"
+      [] // No app fees for this test
     );
 
     // Extract requestId from the first step

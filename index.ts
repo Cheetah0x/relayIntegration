@@ -19,10 +19,11 @@ export const getQuote = async (
   fromAmount: string, // amount
   toAddress: string, // recipient
   fromAddress: string, // user
-  appFees: AppFee[], // array of app fees
-  tradeType = "EXACT_INPUT" // default trade type
+  appFees: AppFee[] // array of app fees
 ) => {
   try {
+    const tradeType = "EXACT_INPUT"; // default trade type
+
     const response = await axios.post(
       "https://api.relay.link/quote",
       {

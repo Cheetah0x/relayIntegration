@@ -8,6 +8,7 @@
     "test:mayan": "jest test/integration/mayanQuote.test.ts"
   },
   "dependencies": {
+    "@mayanfinance/swap-sdk": "^9.8.0",
     "@types/qrcode": "^1.5.5",
     "@types/speakeasy": "^2.0.10",
     "axios": "^0.24.0",
@@ -43,6 +44,13 @@
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
